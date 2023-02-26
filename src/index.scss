@@ -1,0 +1,44 @@
+//Import File 
+@use "./Helpers/Variblies.scss" as *;
+
+//Rules
+body{
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: $Dark-cyan;
+    #card{
+        .cardContent{
+            background-image: url(./images/bg-pattern-card.svg);
+            background-repeat: repeat-x;
+            background-size: 90%;
+            background-color: #fff;
+            img{
+                border: 5px solid #fff;
+            }
+            .name{
+                h5{
+                    color: $Very-dark-desaturated-blue;
+                }
+                .age{
+                    color: $Dark-gray;
+                    font-size: $Font-size;
+                    font-weight: normal;
+                }
+            }
+            .location{
+                color: $Dark-gray;
+                font-size: $Font-size;
+            }
+            .static{
+                .txt{
+                    color: $Very-dark-desaturated-blue;
+                }
+                .num{
+                    font-size: $Font-size;
+                    color: $Dark-grayish-blue;
+                }
+            }
+        }
+    }
+}
